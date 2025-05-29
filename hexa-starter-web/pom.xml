@@ -8,8 +8,6 @@
         <artifactId>hexa-starter</artifactId>
         <version>${revision}</version>
     </parent>
-
-    <groupId>io.github.starter.web</groupId>
     <artifactId>hexa-starter-web</artifactId>
 
     <description>

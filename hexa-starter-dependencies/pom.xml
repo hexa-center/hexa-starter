@@ -46,8 +46,14 @@
             </dependency>
             <!--hexa starter core核心模块-->
             <dependency>
-                <groupId>io.github.starter.core</groupId>
+                <groupId>io.github.hexa-center</groupId>
                 <artifactId>hexa-starter-core</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!-- hexa starter web模块 -->
+            <dependency>
+                <groupId>io.github.hexa-center</groupId>
+                <artifactId>hexa-starter-web</artifactId>
                 <version>${revision}</version>
             </dependency>
         </dependencies>

@@ -19,31 +19,6 @@
 		hexa
 	</description>
 
-	<url>https://github.com/hexa-center/hexa-starter</url>
-
-	<licenses>
-		<license>
-			<name>The Apache License, Version 2.0</name>
-			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
-
-
-	<!--版本控制-->
-	<scm>
-		<url>https://github.com/hexa-center/hexa-starter/tree/main</url>
-		<connection>scm:git:https://github.com/hexa-center/hexa-starter.git</connection>
-		<developerConnection>scm:git:https://github.com/hexa-center/hexa-starter.git</developerConnection>
-	</scm>
-
-	<developers>
-		<developer>
-			<email>LonelyCloudSail@gmail.com</email>
-			<name>孤云帆</name>
-			<url>https://github.com/hexa-center</url>
-		</developer>
-	</developers>
-
 	<modules>
 		<module>hexa-starter-dependencies</module>
 		<module>hexa-starter-web</module>
@@ -53,7 +28,7 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>io.github</groupId>
+				<groupId>io.github.hexa-center</groupId>
 				<artifactId>hexa-starter-dependencies</artifactId>
 				<version>${revision}</version>
 				<type>pom</type>
@@ -208,4 +183,32 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<url>https://github.com/hexa-center/hexa-starter</url>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+
+	<!--版本控制-->
+	<scm>
+		<url>https://github.com/hexa-center/hexa-starter/tree/main</url>
+		<connection>scm:git:https://github.com/hexa-center/hexa-starter.git</connection>
+		<developerConnection>scm:git:https://github.com/hexa-center/hexa-starter.git</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<email>LonelyCloudSail@gmail.com</email>
+			<name>孤云帆</name>
+			<url>https://github.com/hexa-center</url>
+		</developer>
+	</developers>
+
+
+
 </project>
