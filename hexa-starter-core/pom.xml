@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
     <artifactId>hexa-starter-core</artifactId>
-
+    <name>hexa-starter-core</name> <!-- Added project name -->
     <description>
         hexa starter core 核心模块
     </description>

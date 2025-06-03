@@ -88,7 +88,7 @@
 				<version>${maven.gpg.plugin}</version>
 				<configuration>
 					<!-- 改成你自己的路径 -->
-					<executable>/opt/homebrew/bin/gpg</executable>
+					<executable>/opt/homebrew/Cellar/gnupg/2.4.8/bin/gpg</executable>
 				</configuration>
 				<executions>
 					<execution>
@@ -121,7 +121,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>flatten-maven-plugin</artifactId>
-				<inherited>false</inherited>
+				<!-- <inherited>false</inherited> removed to allow inheritance by child modules -->
 				<executions>
 					<execution>
 						<!-- Create an effective POM (with versions expanded) for the CLI and documentation -->
@@ -133,7 +133,7 @@
 						<configuration>
 							<updatePomFile>false</updatePomFile>
 							<outputDirectory>${project.build.directory}/effective-pom</outputDirectory>
-							<flattenedPomFilename>continew-starter-dependencies.xml</flattenedPomFilename>
+							<flattenedPomFilename>hexa-starter-dependencies.xml</flattenedPomFilename>
 							<flattenMode>oss</flattenMode>
 							<pomElements>
 								<dependencyManagement>expand</dependencyManagement>
@@ -152,7 +152,7 @@
 						</goals>
 						<configuration>
 							<updatePomFile>true</updatePomFile>
-							<flattenMode>bom</flattenMode>
+							<flattenMode>oss</flattenMode> <!-- Changed from bom to oss -->
 							<pomElements>
 								<parent>expand</parent>
 								<properties>keep</properties>

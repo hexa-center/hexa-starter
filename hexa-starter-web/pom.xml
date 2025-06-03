@@ -9,6 +9,7 @@
         <version>${revision}</version>
     </parent>
     <artifactId>hexa-starter-web</artifactId>
+    <name>hexa-starter-web</name> <!-- Added project name -->
 
     <description>
         hexa starter web模块
